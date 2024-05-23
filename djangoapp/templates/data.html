@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Дані</title>
+</head>
+<body>
+    <h1>Список заявок</h1>
+    <ul>
+        {% for item in data %}
+        <li>{{ item.name }} - {{ item.email }} - {{ item.message }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
